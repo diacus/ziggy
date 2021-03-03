@@ -29,10 +29,10 @@ install-dev: ## Install dependencies for development
 	pipenv install --dev
 
 lint: ## Run code linter
-	$(PIPENV_RUN) flake8 .
+	$(PIPENV_RUN) flake8 ziggy test
 
 black: ## Reformat the code
-	$(PIPENV_RUN) black test
+	$(PIPENV_RUN) black ziggy test
 
 test: ## Run all the tests
 	$(PIPENV_RUN) nose2
