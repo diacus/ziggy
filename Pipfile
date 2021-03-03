@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+black = "==20.8b1"  # pinning until https://github.com/psf/black/issues/1112 is resolved
+coverage = "*"
+flake8 = "*"
+nose2 = "*"
+pdbpp = "*"
+ptpython = "*"
+
+[requires]
+python_version = "3.8"
